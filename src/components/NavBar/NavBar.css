@@ -28,5 +28,5 @@ nav .indicator {
   width: 0px;
   position: absolute;
   bottom: 0;
-  transition: .3s ease-out all;
+  transition: .1s ease-out all;
 }
