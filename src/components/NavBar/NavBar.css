@@ -1,0 +1,26 @@
+nav {
+  height: 80px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+nav a{
+  flex: 1;
+  height: 100%;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+nav a:hover {
+  background: #f0f0f0
+}
+
+nav .indicator {
+  background: #113cfc;
+}

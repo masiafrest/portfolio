@@ -1,3 +1,4 @@
+import './NavBar.css'
 
 export default function NavBar() {
   return (
@@ -7,7 +8,7 @@ export default function NavBar() {
       <a href="#3">Sección 3</a>
       <a href="#4">Sección 4</a>
       <a href="#5">Sección 5</a>
-      <span class="indicador" id="indicador"></span>
+      <span class="indicator" id="indicator"></span>
     </nav>
   )
 }

@@ -1,4 +1,4 @@
-import './heroHeader.css'
+import './HeroHeader.css'
 
 export default function HeroHeader() {
   return (
