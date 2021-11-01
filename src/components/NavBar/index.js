@@ -38,14 +38,15 @@ export default function NavBar({ titles, visibles }) {
   }, [visibles]);
 
   const onClick = (e) => {
-    setATagWidth(e.target.offsetWidth);
+    // setATagWidth(e.target.offsetWidth);
+
     setATagIndex(e.target.getAttribute("index"));
   };
 
   return (
     <nav id="menu" ref={navRef}>
       {titles.map((v, i) => (
-        <a href={`#${i + 1}`} key={i} index={i} onClick={onClick}>
+        <a href={`#${i + 1}`} key={i} index={i + 1} onClick={onClick}>
           {v}
         </a>
       ))}
