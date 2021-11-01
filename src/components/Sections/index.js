@@ -12,7 +12,7 @@ function Sections({ datas, setRefs }) {
         return (
           <div ref={setRefs[i + 1]} key={id} className="section" id={id}>
             {data.type === "About me" && <AboutMe data={data} />}
-            {data.type === "Proyects" && <Projects data={data} />}
+            {data.type === "Projects" && <Projects data={data} />}
             {data.type === "Contact us" && <ContactUs data={data} />}
           </div>
         );
