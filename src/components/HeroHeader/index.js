@@ -1,10 +1,10 @@
-import './HeroHeader.css'
+import "./HeroHeader.css";
 
-export default function HeroHeader() {
+export default function HeroHeader({ setRef }) {
   return (
-    <header className="hero" id="hero">
+    <header ref={setRef} className="hero" id="hero">
       <h1>Julio Zeng</h1>
       <p>HTML • CSS • Javascript • React • Nodejs</p>
     </header>
-  )
+  );
 }

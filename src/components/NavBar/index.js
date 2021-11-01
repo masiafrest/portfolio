@@ -4,9 +4,15 @@ import "./NavBar.css";
 export default function NavBar({ titles, visibles }) {
   const [aTagWidth, setATagWidth] = useState(0);
   const [aTagIndex, setATagIndex] = useState(0);
-  const translateX = `${aTagWidth * aTagIndex}px`;
-  const translateX2 = `${aTagWidth * (aTagIndex + 1)}px`;
+  const translateX = `${aTagWidth * (aTagIndex - 1)}px`;
+  const translateX2 = `${aTagWidth * aTagIndex}px`;
   const navRef = useRef(null);
+  console.log("--------------------------------------");
+  console.log("aTagWidth: ", aTagWidth);
+  console.log("aTagIndex: ", aTagIndex);
+  console.log("trasnlateX, aTagWidth * aTagIndex: ", translateX);
+  console.log("trasnlateX2, aTagWidth *(  aTagIndex + 1 ): ", translateX2);
+  console.log("--------------------------------------");
 
   useEffect(() => {
     const width = navRef.current.firstChild.offsetWidth;
@@ -25,7 +31,10 @@ export default function NavBar({ titles, visibles }) {
   }, []);
 
   useEffect(() => {
-    setATagIndex(visibles.indexOf(true));
+    if (visibles.some((e) => e === true)) {
+      setATagIndex(visibles.indexOf(true));
+    }
+    // setATagIndex(visibles.indexOf(true));
   }, [visibles]);
 
   const onClick = (e) => {
@@ -45,6 +54,7 @@ export default function NavBar({ titles, visibles }) {
         style={{
           width: aTagWidth,
           left: translateX,
+          // transform: `translate(${translateX})`,
         }}
         id="indicator"
       ></span>

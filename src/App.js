@@ -13,18 +13,17 @@ const observerOptions = {
 };
 
 function App() {
+  const [setRefHero, visibleHero] = useOnScreen(observerOptions);
   const [setRef, visible] = useOnScreen(observerOptions);
   const [setRef1, visible1] = useOnScreen(observerOptions);
   const [setRef2, visible2] = useOnScreen(observerOptions);
-  const [setRef3, visible3] = useOnScreen(observerOptions);
-  const [setRef4, visible4] = useOnScreen(observerOptions);
 
-  const setRefs = [setRef, setRef1, setRef2, setRef3, setRef4];
-  const visibles = [visible, visible1, visible2, visible3, visible4];
+  const setRefs = [setRefHero, setRef, setRef1, setRef2];
+  const visibles = [visibleHero, visible, visible1, visible2];
 
   return (
     <>
-      <HeroHeader />
+      <HeroHeader setRef={setRefHero} />
       <NavBar titles={sectionDatas.map((e) => e.title)} visibles={visibles} />
       <Sections datas={sectionDatas} setRefs={setRefs} />
     </>
