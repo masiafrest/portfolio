@@ -13,6 +13,7 @@ export default function NavBar({ titles, visibles }) {
     setATagWidth(width);
 
     const onResize = () => {
+      const width = navRef.current.firstChild.offsetWidth;
       setATagWidth(width);
     };
 
