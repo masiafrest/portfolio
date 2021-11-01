@@ -1,17 +1,21 @@
 import "./Sections.css";
+import AboutMe from "./AboutMe";
+import Projects from "./Projects";
+import ContactUs from "./ContactUs";
 
 function Sections({ datas, setRefs }) {
   return (
     <section>
       {datas.map((data, i) => {
         const id = i + 1;
+        console.log("data", data.type);
         return (
           <div ref={setRefs[i]} key={id} className="section" id={id}>
-            <div className="card">
-              <h1>{data.title}</h1>
-              <img src="img/1.jpg" alt="" />
-              <p>{data.description}</p>
-            </div>
+            {data.type === "About me" && <AboutMe />}
+            {data.type === "Proyects" && <Projects />}
+            {data.type === "Contact us" && <ContactUs />}
+            {/* <h2>{data.title}</h2>
+            <p>{data.description}</p> */}
           </div>
         );
       })}

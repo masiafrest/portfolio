@@ -1,13 +1,16 @@
 export const sectionDatas = [
   {
+    type: "About me",
     title: "Sobre mi",
     description: "Programacion autodidacta",
   },
   {
+    type: "Proyects",
     title: "Proyecto",
     description: "proyecto que he hecho",
   },
   {
+    type: "Contact us",
     title: "Contactame",
     description: "hello world",
   },
