@@ -1,87 +1,24 @@
 import "./Sections.css";
 
-export default function Sections() {
+function Sections({ datas, setRefs }) {
   return (
     <section>
-      <div className="section" id="1">
-        <div className="card">
-          <h1>Sección 1</h1>
-          <img src="img/1.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam sit
-            amet ante mattis, lacinia arcu nec, consequat massa.Aliquam faucibus
-            quam eget justo posuere vehicula.Donec ac fermentum dolor, rhoncus
-            congue sapien.Maecenas lacinia tellus nec turpis tempor
-            pellentesque.Praesent in erat a nisl viverra dapibus.Pellentesque
-            feugiat dolor quis sapien rutrum, sed placerat est
-            volutpat.Curabitur sed convallis lacus, vel molestie ante.
-          </p>
-        </div>
-      </div>
-
-      <div className="section" id="2">
-        <div className="card">
-          <h1>Sección 2</h1>
-          <img src="img/2.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam sit
-            amet ante mattis, lacinia arcu nec, consequat massa.Aliquam faucibus
-            quam eget justo posuere vehicula.Donec ac fermentum dolor, rhoncus
-            congue sapien.Maecenas lacinia tellus nec turpis tempor
-            pellentesque.Praesent in erat a nisl viverra dapibus.Pellentesque
-            feugiat dolor quis sapien rutrum, sed placerat est
-            volutpat.Curabitur sed convallis lacus, vel molestie ante.
-          </p>
-        </div>
-      </div>
-
-      <div className="section" id="3">
-        <div className="card">
-          <h1>Sección 3</h1>
-          <img src="img/3.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam sit
-            amet ante mattis, lacinia arcu nec, consequat massa.Aliquam faucibus
-            quam eget justo posuere vehicula.Donec ac fermentum dolor, rhoncus
-            congue sapien.Maecenas lacinia tellus nec turpis tempor
-            pellentesque.Praesent in erat a nisl viverra dapibus.Pellentesque
-            feugiat dolor quis sapien rutrum, sed placerat est
-            volutpat.Curabitur sed convallis lacus, vel molestie ante.
-          </p>
-        </div>
-      </div>
-
-      <div className="section" id="4">
-        <div className="card">
-          <h1>Sección 4</h1>
-          <img src="img/4.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam sit
-            amet ante mattis, lacinia arcu nec, consequat massa.Aliquam faucibus
-            quam eget justo posuere vehicula.Donec ac fermentum dolor, rhoncus
-            congue sapien.Maecenas lacinia tellus nec turpis tempor
-            pellentesque.Praesent in erat a nisl viverra dapibus.Pellentesque
-            feugiat dolor quis sapien rutrum, sed placerat est
-            volutpat.Curabitur sed convallis lacus, vel molestie ante.
-          </p>
-        </div>
-      </div>
-
-      <div className="section" id="5">
-        <div className="card">
-          <h1>Sección 5</h1>
-          <img src="img/5.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam sit
-            amet ante mattis, lacinia arcu nec, consequat massa.Aliquam faucibus
-            quam eget justo posuere vehicula.Donec ac fermentum dolor, rhoncus
-            congue sapien.Maecenas lacinia tellus nec turpis tempor
-            pellentesque.Praesent in erat a nisl viverra dapibus.Pellentesque
-            feugiat dolor quis sapien rutrum, sed placerat est
-            volutpat.Curabitur sed convallis lacus, vel molestie ante.
-          </p>
-        </div>
-      </div>
+      {datas.map((data, i) => {
+        const id = i + 1;
+        return (
+          <div ref={setRefs[i]} key={id} className="section" id={id}>
+            <div className="card">
+              <h1>{data.title}</h1>
+              <img src="img/1.jpg" alt="" />
+              <p>{data.description}</p>
+              <a href={data.github}>github</a>
+              <a href={data.link}>link</a>
+            </div>
+          </div>
+        );
+      })}
     </section>
   );
 }
+
+export default Sections;

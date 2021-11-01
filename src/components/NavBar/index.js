@@ -1,15 +1,18 @@
 import { useState, useEffect, useRef } from "react";
 import "./NavBar.css";
 
-export default function NavBar() {
+export default function NavBar({ titles, visibles }) {
   const [aTagWidth, setATagWidth] = useState(0);
   const [aTagIndex, setATagIndex] = useState(0);
   const translateX = `${aTagWidth * aTagIndex}px`;
   const navRef = useRef(null);
 
   useEffect(() => {
+    const width = navRef.current.firstChild.offsetWidth;
+    setATagWidth(width);
+
     const onResize = () => {
-      setATagWidth(navRef.current.firstChild.offsetWidth);
+      setATagWidth(width);
     };
     window.addEventListener("resize", onResize);
 
@@ -18,6 +21,10 @@ export default function NavBar() {
     };
   }, []);
 
+  useEffect(() => {
+    setATagIndex(visibles.indexOf(true));
+  }, [visibles]);
+
   const onClick = (e) => {
     setATagWidth(e.target.offsetWidth);
     setATagIndex(e.target.getAttribute("index"));
@@ -25,13 +32,11 @@ export default function NavBar() {
 
   return (
     <nav id="menu" ref={navRef}>
-      {["Seccion 1", "Seccion 2", "Seccion 3", "Seccion 4", "Seccion 5"].map(
-        (v, i) => (
-          <a href={`#${i + 1}`} key={i} index={i} onClick={onClick}>
-            {v}
-          </a>
-        )
-      )}
+      {titles.map((v, i) => (
+        <a href={`#${i + 1}`} key={i} index={i} onClick={onClick}>
+          {v}
+        </a>
+      ))}
       <span
         className="indicator"
         style={{
