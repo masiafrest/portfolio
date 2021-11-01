@@ -1,5 +1,10 @@
-import React from "react";
+import Card from "./Card";
 
 export default function Projects({ data }) {
-  return <div>projects</div>;
+  return (
+    <div>
+      <div>projects</div>
+      <Card data={data} />
+    </div>
+  );
 }
