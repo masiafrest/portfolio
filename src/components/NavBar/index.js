@@ -5,6 +5,7 @@ export default function NavBar({ titles, visibles }) {
   const [aTagWidth, setATagWidth] = useState(0);
   const [aTagIndex, setATagIndex] = useState(0);
   const translateX = `${aTagWidth * aTagIndex}px`;
+  const translateX2 = `${aTagWidth * (aTagIndex + 1)}px`;
   const navRef = useRef(null);
 
   useEffect(() => {
@@ -14,6 +15,7 @@ export default function NavBar({ titles, visibles }) {
     const onResize = () => {
       setATagWidth(width);
     };
+
     window.addEventListener("resize", onResize);
 
     return () => {
@@ -44,6 +46,13 @@ export default function NavBar({ titles, visibles }) {
           left: translateX,
         }}
         id="indicator"
+      ></span>
+      <span
+        className="indicator2"
+        style={{
+          width: translateX2,
+        }}
+        id="indicator2"
       ></span>
     </nav>
   );

@@ -8,7 +8,7 @@ nav {
   overflow: hidden;
 }
 
-nav a{
+nav a {
   flex: 1;
   height: 100%;
   text-transform: uppercase;
@@ -19,7 +19,7 @@ nav a{
 }
 
 nav a:hover {
-  background: #f0f0f0
+  background: #f0f0f0;
 }
 
 nav .indicator {
@@ -27,6 +27,15 @@ nav .indicator {
   height: 8px;
   width: 0px;
   position: absolute;
+  bottom: 8px;
+  transition: 0.1s ease-out all;
+}
+
+nav .indicator2 {
+  background: firebrick;
+  height: 8px;
+  width: 0px;
+  position: absolute;
   bottom: 0;
-  transition: .1s ease-out all;
+  transition: 0.1s ease-out all;
 }
