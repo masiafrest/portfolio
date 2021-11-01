@@ -1,9 +1,15 @@
 export const sectionDatas = [
   {
-    title: "Seccion 1",
+    title: "Sobre mi",
+    description: "Programacion autodidacta",
+  },
+  {
+    title: "Proyecto",
+    description: "proyecto que he hecho",
+  },
+  {
+    title: "Contactame",
     description: "hello world",
-    github: "github",
-    link: "link",
   },
 ];
 

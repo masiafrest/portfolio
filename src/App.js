@@ -2,7 +2,7 @@ import NavBar from "./components/NavBar";
 import HeroHeader from "./components/HeroHeader";
 import Sections from "./components/Sections";
 
-import { mockSectionDatas } from "./datas/sectionDatas";
+import { mockSectionDatas, sectionDatas } from "./datas/sectionDatas";
 
 // import useOnMultipleScreen from "./hooks/useOnMultipleScreen";
 import useOnScreen from "./hooks/useOnScreen";
@@ -25,11 +25,8 @@ function App() {
   return (
     <>
       <HeroHeader />
-      <NavBar
-        titles={mockSectionDatas.map((e) => e.title)}
-        visibles={visibles}
-      />
-      <Sections datas={mockSectionDatas} setRefs={setRefs} />
+      <NavBar titles={sectionDatas.map((e) => e.title)} visibles={visibles} />
+      <Sections datas={sectionDatas} setRefs={setRefs} />
     </>
   );
 }
