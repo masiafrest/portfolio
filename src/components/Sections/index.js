@@ -11,11 +11,9 @@ function Sections({ datas, setRefs }) {
         console.log("data", data.type);
         return (
           <div ref={setRefs[i]} key={id} className="section" id={id}>
-            {data.type === "About me" && <AboutMe />}
-            {data.type === "Proyects" && <Projects />}
-            {data.type === "Contact us" && <ContactUs />}
-            {/* <h2>{data.title}</h2>
-            <p>{data.description}</p> */}
+            {data.type === "About me" && <AboutMe data={data} />}
+            {data.type === "Proyects" && <Projects data={data} />}
+            {data.type === "Contact us" && <ContactUs data={data} />}
           </div>
         );
       })}

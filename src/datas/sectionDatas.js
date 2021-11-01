@@ -8,6 +8,15 @@ export const sectionDatas = [
     type: "Proyects",
     title: "Proyecto",
     description: "proyecto que he hecho",
+    proyects: [
+      {
+        title: "1",
+        description: "proyecto que he hecho",
+        img: "https://via.placeholder.com/200",
+        link: "https://www.google.com",
+        github: "https://www.github.com",
+      },
+    ],
   },
   {
     type: "Contact us",
