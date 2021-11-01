@@ -1,5 +1,5 @@
 .section {
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
   min-height: 100vh;
   /* max-width: 800px; */
   width: 90%;
@@ -13,7 +13,7 @@
 }
 
 .card {
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   display: flex;
   flex-direction: column;
 }

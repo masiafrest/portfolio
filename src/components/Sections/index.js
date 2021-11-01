@@ -11,8 +11,8 @@ function Sections({ datas, setRefs }) {
               <h1>{data.title}</h1>
               <img src="img/1.jpg" alt="" />
               <p>{data.description}</p>
-              <a href={data.github}>github</a>
               <a href={data.link}>link</a>
+              <a href={data.github}>github</a>
             </div>
           </div>
         );
