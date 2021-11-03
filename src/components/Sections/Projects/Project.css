@@ -9,16 +9,13 @@ div .projects {
 
 div .container {
   background: chartreuse;
-  padding: 0 1em 0 1em;
+  padding: 1em;
   flex: 1;
 
   /* display: flex; */
 
   display: grid;
   gap: 1em;
-<<<<<<< HEAD
   /* grid-auto-rows: 20em; */
-=======
->>>>>>> eb1a3c9356bc90732a2b90ea0f84e8bddd4c7895
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15em), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 25em), 1fr));
 }

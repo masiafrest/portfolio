@@ -1,7 +1,29 @@
 .card {
   background: cornsilk;
+  padding: 1rem;
+  border: 0.2em solid black;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.card > .imgCard {
+  border: 0.2em solid black;
+}
+
+.card .links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card a {
+  padding: 0.5em 0;
+  text-decoration: none;
+  width: 100%;
+  border-top: 0.2em solid black;
+  text-align: center;
+}
+.card a:first-child {
+  border-right: 0.2em solid black;
 }
