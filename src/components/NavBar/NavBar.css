@@ -9,6 +9,7 @@ nav {
 }
 
 nav a {
+  text-decoration: none;
   flex: 1;
   height: 100%;
   text-transform: uppercase;
