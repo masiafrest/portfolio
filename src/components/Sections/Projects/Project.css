@@ -1,5 +1,5 @@
 div .projects {
-  background: chocolate;
+  /* background: chocolate; */
   width: 100%;
   padding-top: 80px;
   display: flex;
@@ -9,7 +9,7 @@ div .projects {
 }
 
 div .container {
-  background: chartreuse;
+  /* background: chartreuse; */
   padding: 1em;
   flex: 1;
 
