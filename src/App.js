@@ -15,7 +15,7 @@ const observerOptions = {
 function App() {
   const [setRefHero, visibleHero] = useOnScreen(observerOptions);
   const [setRef, visible] = useOnScreen(observerOptions);
-  const [setRef1, visible1] = useOnScreen(observerOptions);
+  const [setRef1, visible1] = useOnScreen({ threshold: [0.1] });
   const [setRef2, visible2] = useOnScreen(observerOptions);
 
   const setRefs = [setRefHero, setRef, setRef1, setRef2];
