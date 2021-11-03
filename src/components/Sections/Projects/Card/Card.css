@@ -27,3 +27,8 @@
 .card a:first-child {
   border-right: 0.2em solid black;
 }
+
+.card .stack {
+  display: flex;
+  justify-content: space-evenly;
+}

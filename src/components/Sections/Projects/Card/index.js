@@ -1,5 +1,7 @@
 import "./Card.css";
-
+import { IconContext } from "react-icons";
+import { DiReact } from "react-icons/di";
+import { RiReactjsLine } from "react-icons/ri";
 export default function Card({ data }) {
   return (
     <div className="card">
@@ -12,6 +14,10 @@ export default function Card({ data }) {
       </div>
       <h1>{data.title}</h1>
       <p>{data.description}</p>
+      <div className="stack">
+        <DiReact /> <RiReactjsLine />
+        <DiReact /> <RiReactjsLine />
+      </div>
     </div>
   );
 }
