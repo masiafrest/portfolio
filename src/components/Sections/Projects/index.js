@@ -9,6 +9,7 @@ export default function Projects({ data }) {
         <Card data={data.projects} />
         <Card data={data.projects} />
         <Card data={data.projects} />
+        <Card data={data.projects} />
       </div>
     </div>
   );
