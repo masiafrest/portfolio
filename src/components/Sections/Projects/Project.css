@@ -1,4 +1,4 @@
-.projects {
+div .projects {
   background: chocolate;
   width: 100%;
   display: flex;
@@ -7,11 +7,15 @@
   justify-content: center;
 }
 
-.container {
+div .container {
   background: chartreuse;
   padding: 0 1em 0 1em;
+  flex: 1;
+
+  /* display: flex; */
+
   display: grid;
   gap: 1em;
-  grid-auto-rows: 20em;
+  /* grid-auto-rows: 20em; */
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 15em), 1fr));
 }
