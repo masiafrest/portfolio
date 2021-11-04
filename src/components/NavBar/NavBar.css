@@ -1,3 +1,11 @@
+@keyframes navbar {
+  0% {
+    transform: translate(-1000px, -500px);
+  }
+  50% {
+    transform: translate(0px, -500px);
+  }
+}
 nav {
   background: white;
   height: 80px;
@@ -6,6 +14,8 @@ nav {
   position: sticky;
   top: 0;
   overflow: hidden;
+  animation-name: navbar;
+  animation-duration: 4s;
 }
 
 nav a {
