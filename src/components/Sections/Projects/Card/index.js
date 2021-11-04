@@ -1,4 +1,7 @@
 import "./Card.css";
+import fixDropImg from "./images/fixdropAddRecibo.png";
+import bugTrackerImg from "./images/bugTracker.png";
+import postItemDarkImg from "./images/posItemDark.png";
 import {
   SiReact,
   SiMaterialui,
@@ -15,11 +18,19 @@ import {
   SiPrisma,
 } from "react-icons/si";
 
+const getImgSrc = (title) => {
+  if (title === "FixDrop") return fixDropImg;
+  if (title === "BugTracker") return bugTrackerImg;
+  if (title === "Sistema de POS e inventario") return postItemDarkImg;
+  if (title === "Creacion de Nft") return fixDropImg;
+};
 export default function Card({ data }) {
+  const imgSrc = getImgSrc(data.title);
+
   return (
     <div className="card">
       <div className="imgCard">
-        <img src="fixdropAddRecibo.png" alt="" />
+        <img src={imgSrc} alt="" />
         <div className="links">
           <a href={data.link}>link</a>
           <a href={data.github}>Github</a>
