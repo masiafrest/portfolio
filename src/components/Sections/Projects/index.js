@@ -6,9 +6,9 @@ export default function Projects({ data }) {
     <div className="projects">
       <h2>projects</h2>
       <div className="container">
-        <Card data={data.projects} />
-        <Card data={data.projects} />
-        <Card data={data.projects} />
+        {data.projects.map((e) => (
+          <Card data={e} />
+        ))}
       </div>
     </div>
   );
