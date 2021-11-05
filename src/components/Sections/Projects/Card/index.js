@@ -48,19 +48,21 @@ export default function Card({ data }) {
       </section>
       <div className="stack">
         {stack.map((e) => {
-          if (e === "docker") return <SiDocker size="2.5em" />;
-          if (e === "react") return <SiReact size="2.5em" />;
-          if (e === "bootstrap") return <SiBootstrap size="2.5em" />;
-          if (e === "materialui") return <SiMaterialui size="2.5em" />;
-          if (e === "apollo") return <SiApollographql size="2.5em" />;
-          if (e === "heroku") return <SiHeroku size="2.5em" />;
-          if (e === "firebase") return <SiFirebase size="2.5em" />;
-          if (e === "nodejs") return <SiNodedotjs size="2.5em" />;
-          if (e === "solidity") return <SiSolidity size="2.5em" />;
-          if (e === "graphql") return <SiGraphql size="2.5em" />;
-          if (e === "prisma") return <SiPrisma size="2.5em" />;
-          if (e === "mongodb") return <SiMongodb size="2.5em" />;
-          if (e === "postgresql") return <SiPostgresql size="2.5em" />;
+          if (e === "docker") return <SiDocker size="2.5em" title={e} />;
+          if (e === "react") return <SiReact size="2.5em" title={e} />;
+          if (e === "bootstrap") return <SiBootstrap size="2.5em" title={e} />;
+          if (e === "materialui")
+            return <SiMaterialui size="2.5em" title={e} />;
+          if (e === "apollo") return <SiApollographql size="2.5em" title={e} />;
+          if (e === "heroku") return <SiHeroku size="2.5em" title={e} />;
+          if (e === "firebase") return <SiFirebase size="2.5em" title={e} />;
+          if (e === "nodejs") return <SiNodedotjs size="2.5em" title={e} />;
+          if (e === "solidity") return <SiSolidity size="2.5em" title={e} />;
+          if (e === "graphql") return <SiGraphql size="2.5em" title={e} />;
+          if (e === "prisma") return <SiPrisma size="2.5em" title={e} />;
+          if (e === "mongodb") return <SiMongodb size="2.5em" title={e} />;
+          if (e === "postgresql")
+            return <SiPostgresql size="2.5em" title={e} />;
         })}
       </div>
     </div>
