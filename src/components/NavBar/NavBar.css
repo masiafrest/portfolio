@@ -20,7 +20,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  flex: 1;
+  flex: 2;
   height: 100%;
   text-transform: uppercase;
   display: flex;
@@ -31,6 +31,13 @@ nav a {
 
 nav a:hover {
   background: var(--color-background-hover);
+}
+
+.darkModeToggle {
+  user-select: none;
+  cursor: pointer;
+  flex: 1;
+  /* margin: 0 20px; */
 }
 
 nav .indicator {

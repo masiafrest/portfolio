@@ -49,7 +49,9 @@ export default function NavBar({
           {v}
         </a>
       ))}
-      <a onClick={toggleDarkMode}>{isDarkMode ? "🌛" : "☀"} ️</a>
+      <a className="darkModeToggle" onClick={toggleDarkMode}>
+        {isDarkMode ? "🌛" : "☀"} ️
+      </a>
       <span
         className="indicator"
         style={{
