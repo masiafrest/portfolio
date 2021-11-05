@@ -1,10 +1,11 @@
 import "./AboutMe.css";
 
 export default function AboutMe({ data }) {
+  const { title, description } = data;
   return (
     <section className="aboutMe">
-      <h2>{data.title}</h2>
-      <p>{data.description}</p>
+      <h2>{title}</h2>
+      <p dangerouslySetInnerHTML={{ __html: description }} />
     </section>
   );
 }
