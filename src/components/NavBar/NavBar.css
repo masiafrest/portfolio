@@ -7,7 +7,7 @@
   }
 }
 nav {
-  background: white;
+  background: var(--color-background);
   height: 80px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
@@ -30,7 +30,7 @@ nav a {
 }
 
 nav a:hover {
-  background: #f0f0f0;
+  background: var(--color-background-hover);
 }
 
 nav .indicator {

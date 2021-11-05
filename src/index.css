@@ -1,6 +1,7 @@
 :root {
   --color-background: #fafafa;
   --color-foreground: #1f2023;
+  --color-background-hover: #f0f0f0;
 }
 body {
   background-color: var(--color-background);
@@ -12,6 +13,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-foreground);
 }
 
 code {

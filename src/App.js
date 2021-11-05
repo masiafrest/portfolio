@@ -17,6 +17,10 @@ function App() {
   useEffect(() => {
     document.documentElement.style.setProperty("--color-background", "#1F2023");
     document.documentElement.style.setProperty("--color-foreground", "#EFEFEF");
+    document.documentElement.style.setProperty(
+      "--color-background-hover",
+      "#474444"
+    );
   }, []);
 
   const [setRefHero, visibleHero] = useOnScreen(observerOptions);
