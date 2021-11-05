@@ -53,7 +53,7 @@ export const sectionDatas = [
           "Estado guardado y persitido usando Redux y local storage",
         ],
         img: "https://via.placeholder.com/200",
-        link: "localmente",
+        link: "",
         github: "https://github.com/masiafrest/posNodeReact",
         stack: ["docker", "react", "graphql", "nodejs"],
       },

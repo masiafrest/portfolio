@@ -25,28 +25,29 @@ const getImgSrc = (title) => {
   if (title === "Creacion de Nft") return fixDropImg;
 };
 export default function Card({ data }) {
-  const imgSrc = getImgSrc(data.title);
+  const { title, description, caracteristicas, link, github, stack } = data;
+  const imgSrc = getImgSrc(title);
 
   return (
     <div className="card">
       <div className="imgCard">
         <img src={imgSrc} alt="" />
-        <div className="links">
-          <a href={data.link}>link</a>
-          <a href={data.github}>Github</a>
+        <div className={link ? "links" : "link"}>
+          {link && <a href={link}>link</a>}
+          <a href={github}>Github</a>
         </div>
       </div>
-      <h1>{data.title}</h1>
-      <span>{data.description}</span>
+      <h1>{title}</h1>
+      <span>{description}</span>
       <section className="caracteristicas">
         <ul aria-label="Caracteristicas:">
-          {data.caracteristicas.map((e) => (
+          {caracteristicas.map((e) => (
             <li>{e}</li>
           ))}
         </ul>
       </section>
       <div className="stack">
-        {data.stack.map((e) => {
+        {stack.map((e) => {
           if (e === "docker") return <SiDocker size="2.5em" />;
           if (e === "react") return <SiReact size="2.5em" />;
           if (e === "bootstrap") return <SiBootstrap size="2.5em" />;
