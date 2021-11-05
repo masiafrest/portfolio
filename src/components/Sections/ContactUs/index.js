@@ -2,11 +2,9 @@ import "./ContactUs.css";
 
 export default function ContactUs({ data }) {
   return (
-    <section>
-      <h2>Contact Us</h2>
-      <form>
-        <label></label>
-      </form>
+    <section className="contactUs">
+      <h2>Contactame</h2>
+      <span>Email: masiafrest@gmail.com</span>
     </section>
   );
 }
