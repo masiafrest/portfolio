@@ -1,5 +1,12 @@
 import "./ContactUs.css";
 
 export default function ContactUs({ data }) {
-  return <div>Contact Us</div>;
+  return (
+    <section>
+      <h2>Contact Us</h2>
+      <form>
+        <label></label>
+      </form>
+    </section>
+  );
 }

@@ -2,6 +2,7 @@ import "./Card.css";
 import fixDropImg from "./images/fixdropAddRecibo.png";
 import bugTrackerImg from "./images/bugTracker.png";
 import postItemDarkImg from "./images/posItemDark.png";
+import NftWave from "./images/NftWave.png";
 import {
   SiReact,
   SiMaterialui,
@@ -22,7 +23,7 @@ const getImgSrc = (title) => {
   if (title === "FixDrop") return fixDropImg;
   if (title === "BugTracker") return bugTrackerImg;
   if (title === "Sistema de POS e inventario") return postItemDarkImg;
-  if (title === "Creacion de Nft") return fixDropImg;
+  if (title === "Creacion de Nft") return NftWave;
 };
 export default function Card({ data }) {
   const { title, description, caracteristicas, link, github, stack } = data;
