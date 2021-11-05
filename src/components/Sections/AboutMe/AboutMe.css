@@ -6,9 +6,10 @@ section .aboutMe {
 }
 
 section .aboutMe h2 {
-  margin: 80px 0;
+  margin: 60px 0;
 }
 
 section .aboutMe p {
   text-align: justify;
+  line-height: 1.4;
 }
