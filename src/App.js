@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
 import HeroHeader from "./components/HeroHeader";
 import Sections from "./components/Sections";
@@ -14,14 +14,44 @@ const observerOptions = {
 };
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const color = {
+    lotionColor: "#fafafa",
+    raisinBlack: "#1F2023",
+    antiFlashWhite: "#f0f0f0",
+    outerSpace: "#474444",
+    brightGray: "#EFEFEF",
+  };
+
   useEffect(() => {
-    document.documentElement.style.setProperty("--color-background", "#1F2023");
-    document.documentElement.style.setProperty("--color-foreground", "#EFEFEF");
-    document.documentElement.style.setProperty(
-      "--color-background-hover",
-      "#474444"
-    );
-  }, []);
+    if (isDarkMode) {
+      document.documentElement.style.setProperty(
+        "--color-background",
+        color.raisinBlack
+      );
+      document.documentElement.style.setProperty(
+        "--color-foreground",
+        color.brightGray
+      );
+      document.documentElement.style.setProperty(
+        "--color-background-hover",
+        color.outerSpace
+      );
+    } else {
+      document.documentElement.style.setProperty(
+        "--color-background",
+        color.lotionColor
+      );
+      document.documentElement.style.setProperty(
+        "--color-foreground",
+        color.raisinBlack
+      );
+      document.documentElement.style.setProperty(
+        "--color-background-hover",
+        color.antiFlashWhite
+      );
+    }
+  }, [isDarkMode]);
 
   const [setRefHero, visibleHero] = useOnScreen(observerOptions);
   const [setRef, visible] = useOnScreen(observerOptions);
@@ -31,10 +61,19 @@ function App() {
   const setRefs = [setRefHero, setRef, setRef1, setRef2];
   const visibles = [visibleHero, visible, visible1, visible2];
 
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
     <>
       <HeroHeader setRef={setRefHero} />
-      <NavBar titles={sectionDatas.map((e) => e.title)} visibles={visibles} />
+      <NavBar
+        titles={sectionDatas.map((e) => e.title)}
+        visibles={visibles}
+        isDarkMode={isDarkMode}
+        toggleDarkMode={toggleDarkMode}
+      />
       <Sections datas={sectionDatas} setRefs={setRefs} />
     </>
   );
