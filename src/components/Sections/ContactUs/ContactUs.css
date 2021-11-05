@@ -8,6 +8,6 @@ section .contactUs {
 }
 
 section .contactUs > span {
-  background: violet;
+  /* background: violet; */
   margin-top: 50%;
 }
