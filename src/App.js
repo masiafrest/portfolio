@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import NavBar from "./components/NavBar";
 import HeroHeader from "./components/HeroHeader";
 import Sections from "./components/Sections";
@@ -13,6 +14,11 @@ const observerOptions = {
 };
 
 function App() {
+  useEffect(() => {
+    document.documentElement.style.setProperty("--color-background", "#1F2023");
+    document.documentElement.style.setProperty("--color-foreground", "#EFEFEF");
+  }, []);
+
   const [setRefHero, visibleHero] = useOnScreen(observerOptions);
   const [setRef, visible] = useOnScreen(observerOptions);
   const [setRef1, visible1] = useOnScreen({ threshold: [0.1] });
