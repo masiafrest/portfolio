@@ -7,7 +7,8 @@ form {
 input[type="text"],
 input[type="email"],
 textarea {
-  border: 0.2em solid var(--color-foreground);
+  background: grays;
+  border: 0.15em solid var(--color-foreground);
   width: 100%;
   padding: 12px;
   /* border: 1px solid #ccc; */
@@ -19,4 +20,5 @@ textarea {
 button[type="submit"] {
   /* border: 0.2em solid var(--color-foreground); */
   align-self: center;
+  background: white;
 }
