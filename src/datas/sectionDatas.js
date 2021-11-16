@@ -14,6 +14,18 @@ export const sectionDatas = [
     description: "proyecto que he hecho",
     projects: [
       {
+        title: "Creacion de Nft",
+        description: "aplicacion para mintear NFT en blockchain de ethereum",
+        caracteristicas: [
+          "Creacion y deploy de contrato inteligente en la red de ethereum",
+          "acceder a metamask desde el navegador",
+        ],
+        img: "",
+        link: "https://nft-starter-repo-final.masiafmasiaf.repl.co/",
+        github: "https://github.com/masiafrest/NFT-web3-BuildSpace",
+        stack: ["react", "solidity"],
+      },
+      {
         title: "BugTracker",
         description:
           "Primer pequeño proyecto responsivo de tablero kamban para dar seguimiento estilo trello",
@@ -60,18 +72,6 @@ export const sectionDatas = [
         link: "",
         github: "https://github.com/masiafrest/posNodeReact",
         stack: ["docker", "react", "graphql", "nodejs"],
-      },
-      {
-        title: "Creacion de Nft",
-        description: "aplicacion para mintear NFT en blockchain de ethereum",
-        caracteristicas: [
-          "Creacion y deploy de contrato inteligente en la red de ethereum",
-          "acceder a metamask desde el navegador",
-        ],
-        img: "",
-        link: "https://replit.com/@MasiafMasiaf/waveportal-baseline-student#.replit",
-        github: "https://github.com/masiafrest/NFT-web3-BuildSpace",
-        stack: ["react", "solidity"],
       },
     ],
   },
