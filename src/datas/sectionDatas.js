@@ -26,35 +26,6 @@ export const sectionDatas = [
         stack: ["react", "solidity"],
       },
       {
-        title: "BugTracker",
-        description:
-          "Primer pequeño proyecto responsivo de tablero kamban para dar seguimiento estilo trello",
-        caracteristicas: [
-          "React Hooks como useState, useEffect",
-          "multiple llamada a API con axios para CRUD con Express y MongoDb ",
-          "subir a un servidor con Heroku y gestionar desde terminal",
-        ],
-        img: "",
-        link: "https://bugtracker-mern.herokuapp.com/",
-        github: "https://github.com/masiafrest/bugtracker-mern",
-        stack: ["react", "boostrap", "nodejs", "heroku", "mongodb"],
-      },
-      {
-        title: "FixDrop",
-        description: "Segundo Proyecto de un sistema para hacer y ver registro",
-        caracteristicas: [
-          "Autenticacion de usuario para hacer recibo, borrar y editar",
-          "Creacion y validacion de formulario ",
-          "Estado guardado y persitido usando Redux y local storage",
-          "Multiplo llamada API a Firebase para CRUD",
-          "Implemetancion de scroll infinito",
-        ],
-        img: "",
-        link: "https://repairworkshop-48385.web.app/",
-        github: "https://github.com/masiafrest/repairworkshop",
-        stack: ["react", "materialui", "firebase"],
-      },
-      {
         title: "Sistema de POS e inventario",
         description:
           "aplicacion totalmente responsivo para hacer registro de venta e inventario",
@@ -72,6 +43,35 @@ export const sectionDatas = [
         link: "",
         github: "https://github.com/masiafrest/posNodeReact",
         stack: ["docker", "react", "graphql", "nodejs"],
+      },
+      {
+        title: "FixDrop",
+        description: "Segundo Proyecto de un sistema para hacer y ver registro",
+        caracteristicas: [
+          "Autenticacion de usuario para hacer recibo, borrar y editar",
+          "Creacion y validacion de formulario ",
+          "Estado guardado y persitido usando Redux y local storage",
+          "Multiplo llamada API a Firebase para CRUD",
+          "Implemetancion de scroll infinito",
+        ],
+        img: "",
+        link: "https://repairworkshop-48385.web.app/",
+        github: "https://github.com/masiafrest/repairworkshop",
+        stack: ["react", "materialui", "firebase"],
+      },
+      {
+        title: "BugTracker",
+        description:
+          "Primer pequeño proyecto responsivo de tablero kamban para dar seguimiento estilo trello",
+        caracteristicas: [
+          "React Hooks como useState, useEffect",
+          "multiple llamada a API con axios para CRUD con Express y MongoDb ",
+          "subir a un servidor con Heroku y gestionar desde terminal",
+        ],
+        img: "",
+        link: "https://bugtracker-mern.herokuapp.com/",
+        github: "https://github.com/masiafrest/bugtracker-mern",
+        stack: ["react", "boostrap", "nodejs", "heroku", "mongodb"],
       },
     ],
   },
