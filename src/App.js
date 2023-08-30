@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import HeroHeader from "./components/HeroHeader";
 import Sections from "./components/Sections";
 
-import { mockSectionDatas, sectionDatas } from "./datas/sectionDatas";
+import { sectionDatas } from "./datas/sectionDatas";
 
 // import useOnMultipleScreen from "./hooks/useOnMultipleScreen";
 import useOnScreen from "./hooks/useOnScreen";
@@ -13,15 +13,15 @@ const observerOptions = {
   threshold: 0.5,
 };
 
+const color = {
+  lotionColor: "#fafafa",
+  raisinBlack: "#1F2023",
+  antiFlashWhite: "#f0f0f0",
+  outerSpace: "#474444",
+  brightGray: "#EFEFEF",
+};
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const color = {
-    lotionColor: "#fafafa",
-    raisinBlack: "#1F2023",
-    antiFlashWhite: "#f0f0f0",
-    outerSpace: "#474444",
-    brightGray: "#EFEFEF",
-  };
 
   useEffect(() => {
     if (isDarkMode) {

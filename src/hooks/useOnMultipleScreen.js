@@ -3,8 +3,6 @@ import { useState, useEffect } from "react";
 export default function useOnMultipleScreen(options) {
   const [refs, setRefs] = useState([]);
   const [visibles, setVisibles] = useState([]);
-  console.log("refs:", refs);
-  console.log("visibles:", visibles);
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
@@ -13,7 +11,6 @@ export default function useOnMultipleScreen(options) {
 
     if (refs) {
       for (let ref of refs) {
-        console.log("ref:", ref);
         observer.observe(ref);
       }
     }

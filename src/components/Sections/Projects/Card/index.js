@@ -23,12 +23,12 @@ const getImgSrc = (title) => {
   if (title === "FixDrop") return fixDropImg;
   if (title === "BugTracker") return bugTrackerImg;
   if (title === "Sistema de POS e inventario") return postItemDarkImg;
-  if (title === "Creacion de Nft") return NftWave;
+  if (title === "Creación de Nft") return NftWave;
 };
 export default function Card({ data }) {
   const { title, description, caracteristicas, link, github, stack } = data;
   const imgSrc = getImgSrc(title);
-
+  console.log({imgSrc, title})
   return (
     <div className="card">
       <div className="imgCard">
@@ -43,29 +43,32 @@ export default function Card({ data }) {
       <section className="caracteristicas">
         <ul aria-label="Caracteristicas:">
           {caracteristicas.map((e) => (
-            <li>{e}</li>
+            <li key={e}>{e}</li>
           ))}
         </ul>
       </section>
       <div className="stack">
         {stack.map((e) => {
-          if (e === "docker") return <SiDocker size="2.5em" title={e} />;
-          if (e === "react") return <SiReact size="2.5em" title={e} />;
-          if (e === "bootstrap") return <SiBootstrap size="2.5em" title={e} />;
-          if (e === "materialui")
-            return <SiMaterialui size="2.5em" title={e} />;
-          if (e === "apollo") return <SiApollographql size="2.5em" title={e} />;
-          if (e === "heroku") return <SiHeroku size="2.5em" title={e} />;
-          if (e === "firebase") return <SiFirebase size="2.5em" title={e} />;
-          if (e === "nodejs") return <SiNodedotjs size="2.5em" title={e} />;
-          if (e === "solidity") return <SiSolidity size="2.5em" title={e} />;
-          if (e === "graphql") return <SiGraphql size="2.5em" title={e} />;
-          if (e === "prisma") return <SiPrisma size="2.5em" title={e} />;
-          if (e === "mongodb") return <SiMongodb size="2.5em" title={e} />;
-          if (e === "postgresql")
-            return <SiPostgresql size="2.5em" title={e} />;
+          return <Icon key={e} type={e} />;
         })}
       </div>
     </div>
   );
+}
+
+function Icon({ type }) {
+  if (type === "docker") return <SiDocker size="2.5em" title={type} />;
+  if (type === "react") return <SiReact size="2.5em" title={type} />;
+  if (type === "bootstrap") return <SiBootstrap size="2.5em" title={type} />;
+  if (type === "materialui") return <SiMaterialui size="2.5em" title={type} />;
+  if (type === "apollo") return <SiApollographql size="2.5em" title={type} />;
+  if (type === "heroku") return <SiHeroku size="2.5em" title={type} />;
+  if (type === "firebase") return <SiFirebase size="2.5em" title={type} />;
+  if (type === "nodejs") return <SiNodedotjs size="2.5em" title={type} />;
+  if (type === "solidity") return <SiSolidity size="2.5em" title={type} />;
+  if (type === "graphql") return <SiGraphql size="2.5em" title={type} />;
+  if (type === "prisma") return <SiPrisma size="2.5em" title={type} />;
+  if (type === "mongodb") return <SiMongodb size="2.5em" title={type} />;
+  if (type === "postgresql") return <SiPostgresql size="2.5em" title={type} />;
+  return null;
 }

@@ -34,7 +34,6 @@ export default function Form() {
 
   const validateForm = () => {
     const isEmpty = Object.values(toSend).some((e) => e === "");
-    console.log("isempty: ", isEmpty);
     return isEmpty;
   };
 
