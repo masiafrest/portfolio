@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b7a73d7d.chunk.css",
-    "main.js": "/portfolio/static/js/main.28e90891.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.28e90891.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.96f8597b.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.96f8597b.js.map",
+    "main.css": "/portfolio/static/css/main.4dee2ffb.chunk.css",
+    "main.js": "/portfolio/static/js/main.e5c14c37.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e5c14c37.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.e4841a5c.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.e4841a5c.js.map",
     "static/css/2.a1e54b82.chunk.css": "/portfolio/static/css/2.a1e54b82.chunk.css",
-    "static/js/2.75f0d82c.chunk.js": "/portfolio/static/js/2.75f0d82c.chunk.js",
-    "static/js/2.75f0d82c.chunk.js.map": "/portfolio/static/js/2.75f0d82c.chunk.js.map",
-    "static/js/3.415daef6.chunk.js": "/portfolio/static/js/3.415daef6.chunk.js",
-    "static/js/3.415daef6.chunk.js.map": "/portfolio/static/js/3.415daef6.chunk.js.map",
+    "static/js/2.5cd5ac31.chunk.js": "/portfolio/static/js/2.5cd5ac31.chunk.js",
+    "static/js/2.5cd5ac31.chunk.js.map": "/portfolio/static/js/2.5cd5ac31.chunk.js.map",
+    "static/js/3.d0932182.chunk.js": "/portfolio/static/js/3.d0932182.chunk.js",
+    "static/js/3.d0932182.chunk.js.map": "/portfolio/static/js/3.d0932182.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.a1e54b82.chunk.css.map": "/portfolio/static/css/2.a1e54b82.chunk.css.map",
-    "static/css/main.b7a73d7d.chunk.css.map": "/portfolio/static/css/main.b7a73d7d.chunk.css.map",
-    "static/js/2.75f0d82c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.75f0d82c.chunk.js.LICENSE.txt",
+    "static/css/main.4dee2ffb.chunk.css.map": "/portfolio/static/css/main.4dee2ffb.chunk.css.map",
+    "static/js/2.5cd5ac31.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5cd5ac31.chunk.js.LICENSE.txt",
     "static/media/NftWave.5e7842fa.png": "/portfolio/static/media/NftWave.5e7842fa.png",
     "static/media/bugTracker.90df9f5d.png": "/portfolio/static/media/bugTracker.90df9f5d.png",
     "static/media/fixdropAddRecibo.4964aa3c.png": "/portfolio/static/media/fixdropAddRecibo.4964aa3c.png",
     "static/media/posItemDark.b72bac1d.png": "/portfolio/static/media/posItemDark.b72bac1d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.96f8597b.js",
+    "static/js/runtime-main.e4841a5c.js",
     "static/css/2.a1e54b82.chunk.css",
-    "static/js/2.75f0d82c.chunk.js",
-    "static/css/main.b7a73d7d.chunk.css",
-    "static/js/main.28e90891.chunk.js"
+    "static/js/2.5cd5ac31.chunk.js",
+    "static/css/main.4dee2ffb.chunk.css",
+    "static/js/main.e5c14c37.chunk.js"
   ]
 }
