@@ -3,7 +3,7 @@ export const sectionDatas = [
     type: "About me",
     title: "Sobre mi",
     description:
-      "Soy nuevo en esta industria de programación, mientras he tenido trabajo mayormente como vendedor y logística, pero siempre he tenido una inclinación a la informática, he aprendido varias tecnología de desarollo empezando por un curso online de la Universidad de Hardvard, <a href='https://cs50.harvard.edu/college/2021/fall/'>Ciencia Computacional CS50</a>, donde el estudiante aprende lenguaje C, JavaScript y Python pero lo mas importante son los concepto y metodologia en el desarollo para resolver un problema en especifico, de allí algunos cursos de curiosidad en Coursera.",
+      "Soy desarollador de software autodidacta con mas de 5 años de experiencias, he aprendido varias tecnología de desarollo empezando por un curso online de la Universidad de Hardvard, <a href='https://cs50.harvard.edu/college/2021/fall/'>Ciencia Computacional CS50</a>, donde el estudiante aprende lenguaje C, JavaScript y Python pero lo mas importante son los concepto y metodologia en el desarollo para resolver un problema en especifico, de allí algunos cursos de curiosidad en Coursera.",
   },
   {
     type: "Projects",
