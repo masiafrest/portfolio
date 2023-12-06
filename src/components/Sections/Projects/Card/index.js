@@ -16,7 +16,9 @@ import {
   SiTypescript,
   SiGo,
   SiDjango,
-  SiPython
+  SiPython,
+  SiAngular,
+  SiNextdotjs
 } from "react-icons/si";
 
 const getImgSrc = (img) => {
@@ -71,5 +73,7 @@ function Icon({ type }) {
   if (type === "typescript") return <SiTypescript size="2.5em" title={type} />;
   if (type === "django") return <SiDjango size="2.5em" title={type} />;
   if (type === "python") return <SiPython size="2.5em" title={type} />;
+  if (type === "angular") return <SiAngular size="2.5em" title={type} />;
+  if (type === "nextjs") return <SiNextdotjs size="2.5em" title={type} />;
   return null;
 }

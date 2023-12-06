@@ -69,6 +69,13 @@ export const sectionDatas = [
         link: "https://nft-starter-repo-final.masiafmasiaf.repl.co/",
         github: "https://github.com/masiafrest/NFT-web3-BuildSpace",
         stack: ["react", "solidity"],
+      },{
+        title: "Cheil Samsung Group",
+        description:"",
+        caracteristicas: [],
+        img:"",
+        link:"",
+        stack:["angular", "nextjs", "react", "typescript", "express"]
       },
       {
         title: "Colibid",
