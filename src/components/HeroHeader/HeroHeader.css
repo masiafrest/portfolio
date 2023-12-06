@@ -38,12 +38,12 @@
 
 header h1 {
   animation-name: slideinFromRight;
-  animation-duration: 4s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
 header p {
   animation-name: slideinFromLeft;
-  animation-duration: 4s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }

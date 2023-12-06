@@ -15,7 +15,7 @@ nav {
   top: 0;
   overflow: hidden;
   animation-name: navbar;
-  animation-duration: 4s;
+  animation-duration: 1s;
 }
 
 nav a {
