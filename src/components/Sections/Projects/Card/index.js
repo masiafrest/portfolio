@@ -34,7 +34,7 @@ export default function Card({ data }) {
         <img src={imgSrc} alt="" />
         <div className={link ? "links" : "link"}>
           {link && <a href={link}>link</a>}
-          <a href={github}>Github</a>
+          {github && <a href={github}>Github</a>} 
         </div>
       </div>
       <h1>{title}</h1>
