@@ -1,8 +1,4 @@
 import "./Card.css";
-import fixDropImg from "./images/fixdropAddRecibo.png";
-import bugTrackerImg from "./images/bugTracker.png";
-import postItemDarkImg from "./images/posItemDark.png";
-import NftWave from "./images/NftWave.png";
 import {
   SiReact,
   SiMaterialui,
@@ -19,15 +15,13 @@ import {
   SiPrisma,
 } from "react-icons/si";
 
-const getImgSrc = (title) => {
-  if (title === "FixDrop") return fixDropImg;
-  if (title === "BugTracker") return bugTrackerImg;
-  if (title === "Sistema de POS e inventario") return postItemDarkImg;
-  if (title === "Creación de Nft") return NftWave;
+const getImgSrc = (img) => {
+  return  `${process.env.PUBLIC_URL}/assets/img/${img}`
 };
+
 export default function Card({ data }) {
-  const { title, description, caracteristicas, link, github, stack } = data;
-  const imgSrc = getImgSrc(title);
+  const { title, description, caracteristicas, link, github, stack , img} = data;
+  const imgSrc = getImgSrc(img);
   return (
     <div className="card">
       <div className="imgCard">
