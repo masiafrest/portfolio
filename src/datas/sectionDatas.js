@@ -70,6 +70,21 @@ export const sectionDatas = [
         github: "https://github.com/masiafrest/NFT-web3-BuildSpace",
         stack: ["react", "solidity"],
       },
+      {
+        title: "Colibid",
+        description: "Trabajar en equipo para la creación y mantenimiento fullstack, una aplicación usada por los bancos de España, a continuación los proyecto que me asignaron: ",
+        caracteristicas:[
+          "implementar en un ya existente sistema de autenticación con el sistema de autenticación con google",
+          "recrear el formulario de hipoteca con validación y mas de 20 pasos dinámico dependiendo del tipo de producto que se elija, incrementando la calidad de clientes para los bancos en un 40%",
+          "integrar los servicios de TrueLayer (red abierta de bancos de Europa) a la aplicación desde front hasta backend para obtener los datos del cliente mediante los bancos",
+          "integrar MapBox para la ubicación de la vivienda a hipotecar",
+          "implementado todo un CRM dentro de la aplicación para los bancos manejar los clientes que le enviamos"
+        ],
+        img:"colibid.png",
+        link: "https://app.colibid.com/",
+        stack: ["react", "django", "python", "typescript", "materialui", "go"]
+      },
+      
     ],
   },
   {
