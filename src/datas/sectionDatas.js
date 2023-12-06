@@ -11,16 +11,18 @@ export const sectionDatas = [
     description: "proyecto que he hecho",
     projects: [
       {
-        title: "Creación de Nft",
-        description: "aplicación para mintear NFT en blockchain de ethereum",
+        title: "BugTracker",
+        description:
+          "Primer pequeño proyecto responsivo de tablero kamban para dar seguimiento estilo trello",
         caracteristicas: [
-          "Creación y deploy de contrato inteligente en la red de ethereum",
-          "acceder a metamask desde el navegador",
+          "React Hooks como useState, useEffect",
+          "multiple llamada a API con axios para CRUD con Express y MongoDb ",
+          "subir a un servidor con Heroku y gestionar desde terminal",
         ],
         img: "",
-        link: "https://nft-starter-repo-final.masiafmasiaf.repl.co/",
-        github: "https://github.com/masiafrest/NFT-web3-BuildSpace",
-        stack: ["react", "solidity"],
+        link: "https://bugtracker-mern.herokuapp.com/",
+        github: "https://github.com/masiafrest/bugtracker-mern",
+        stack: ["react", "boostrap", "nodejs", "heroku", "mongodb"],
       },
       {
         title: "Sistema de POS e inventario",
@@ -57,18 +59,16 @@ export const sectionDatas = [
         stack: ["react", "materialui", "firebase"],
       },
       {
-        title: "BugTracker",
-        description:
-          "Primer pequeño proyecto responsivo de tablero kamban para dar seguimiento estilo trello",
+        title: "Creación de Nft",
+        description: "aplicación para mintear NFT en blockchain de ethereum",
         caracteristicas: [
-          "React Hooks como useState, useEffect",
-          "multiple llamada a API con axios para CRUD con Express y MongoDb ",
-          "subir a un servidor con Heroku y gestionar desde terminal",
+          "Creación y deploy de contrato inteligente en la red de ethereum",
+          "acceder a metamask desde el navegador",
         ],
         img: "",
-        link: "https://bugtracker-mern.herokuapp.com/",
-        github: "https://github.com/masiafrest/bugtracker-mern",
-        stack: ["react", "boostrap", "nodejs", "heroku", "mongodb"],
+        link: "https://nft-starter-repo-final.masiafmasiaf.repl.co/",
+        github: "https://github.com/masiafrest/NFT-web3-BuildSpace",
+        stack: ["react", "solidity"],
       },
     ],
   },
