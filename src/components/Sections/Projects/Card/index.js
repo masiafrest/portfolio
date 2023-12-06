@@ -13,6 +13,10 @@ import {
   SiMongodb,
   SiPostgresql,
   SiPrisma,
+  SiTypescript,
+  SiGo,
+  SiDjango,
+  SiPython
 } from "react-icons/si";
 
 const getImgSrc = (img) => {
@@ -63,5 +67,9 @@ function Icon({ type }) {
   if (type === "prisma") return <SiPrisma size="2.5em" title={type} />;
   if (type === "mongodb") return <SiMongodb size="2.5em" title={type} />;
   if (type === "postgresql") return <SiPostgresql size="2.5em" title={type} />;
+  if (type === "go") return <SiGo size="2.5em" title={type} />;
+  if (type === "typescript") return <SiTypescript size="2.5em" title={type} />;
+  if (type === "django") return <SiDjango size="2.5em" title={type} />;
+  if (type === "python") return <SiPython size="2.5em" title={type} />;
   return null;
 }
