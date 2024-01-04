@@ -18,7 +18,11 @@ import {
   SiDjango,
   SiPython,
   SiAngular,
-  SiNextdotjs
+  SiNextdotjs,
+  SiSupabase,
+  SiVercel,
+  SiChakraui,
+  SiTailwindcss
 } from "react-icons/si";
 
 const getImgSrc = (img) => {
@@ -75,5 +79,9 @@ function Icon({ type }) {
   if (type === "python") return <SiPython size="2.5em" title={type} />;
   if (type === "angular") return <SiAngular size="2.5em" title={type} />;
   if (type === "nextjs") return <SiNextdotjs size="2.5em" title={type} />;
+  if (type === "supabase") return <SiSupabase size="2.5em" title={type} />;
+  if (type === "vercel") return <SiVercel size="2.5em" title={type} />;
+  if (type === "chakraui") return <SiChakraui size="2.5em" title={type} />;
+  if (type === "tailwind") return <SiTailwindcss size="2.5em" title={type} />;
   return null;
 }

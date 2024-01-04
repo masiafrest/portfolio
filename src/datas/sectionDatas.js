@@ -75,7 +75,19 @@ export const sectionDatas = [
         caracteristicas: [],
         img:"",
         link:"",
-        stack:["angular", "nextjs", "react", "typescript", "express"]
+        stack:["angular", "nextjs", "react", "typescript", "express", "tailwind", "postgresql"]
+      },
+      {
+        tittle:"Arterra",
+        description: "Proyecto de un familiar y su socia, al final su proyecto no se llevo a cabo 😢",
+        caracteristicas:[
+          "sistema de login y autenticación para cliente y dueños",
+          "carrito de compras y multi formulario",
+          "listar artículos como un cms"
+        ],
+        img: "Arterra.png",
+        link: "https://arterra-d3snsrh82-masiafrest.vercel.app/",
+        stack: ["nextjs", "react", "supabase", "vercel", "postgresql", "chakraui"]
       },
       {
         title: "Colibid",
