@@ -22,7 +22,8 @@ import {
   SiSupabase,
   SiVercel,
   SiChakraui,
-  SiTailwindcss
+  SiTailwindcss,
+  SiRedis
 } from "react-icons/si";
 
 const getImgSrc = (img) => {
@@ -83,5 +84,6 @@ function Icon({ type }) {
   if (type === "vercel") return <SiVercel size="2.5em" title={type} />;
   if (type === "chakraui") return <SiChakraui size="2.5em" title={type} />;
   if (type === "tailwind") return <SiTailwindcss size="2.5em" title={type} />;
+  if (type === "redis") return <SiRedis size="2.5em" title={type} />;
   return null;
 }

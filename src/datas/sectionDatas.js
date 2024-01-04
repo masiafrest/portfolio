@@ -60,7 +60,7 @@ export const sectionDatas = [
       },
       {
         title: "Creación de Nft",
-        description: "aplicación para mintear NFT en blockchain de ethereum",
+        description: "Aplicación para mintear NFT en blockchain de ethereum",
         caracteristicas: [
           "Creación y deploy de contrato inteligente en la red de ethereum",
           "acceder a metamask desde el navegador",
@@ -71,11 +71,14 @@ export const sectionDatas = [
         stack: ["react", "solidity"],
       },{
         title: "Cheil Samsung Group",
-        description:"",
-        caracteristicas: [],
+        description:"Creación de herramientas internos, como dashboard, blog interno",
+        caracteristicas: [
+          "sistema de login",
+          "sistema de Multiple métricas",
+        ],
         img:"",
         link:"",
-        stack:["angular", "nextjs", "react", "typescript", "express", "tailwind", "postgresql"]
+        stack:["angular", "nextjs", "react", "typescript", "express", "tailwind", "postgresql", "redis"]
       },
       {
         tittle:"Arterra",
@@ -101,7 +104,7 @@ export const sectionDatas = [
         ],
         img:"colibid.png",
         link: "https://app.colibid.com/",
-        stack: ["react", "django", "python", "typescript", "materialui", "go"]
+        stack: ["react", "django", "python", "typescript", "materialui", "go", "redis"]
       },
       
     ],
