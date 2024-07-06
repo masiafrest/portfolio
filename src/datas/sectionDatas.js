@@ -3,7 +3,7 @@ export const sectionDatas = [
     type: "About me",
     title: "Sobre mi",
     description:
-      "Soy desarollador de software autodidacta con mas de 5 años de experiencias, he aprendido varias tecnología de desarollo empezando por un curso online de la Universidad de Hardvard, <a href='https://cs50.harvard.edu/college/2021/fall/'>Ciencia Computacional CS50</a>, donde el estudiante aprende lenguaje C, JavaScript y Python pero lo mas importante son los concepto y metodologia en el desarollo para resolver un problema en especifico, de allí algunos cursos de curiosidad en Coursera.",
+      "Soy desarollador de software autodidacta con mas de 5 años de experiencias, he aprendido varias tecnología de desarollo empezando por un curso online de la Universidad de Harvard, <a href='https://cs50.harvard.edu/college/2021/fall/'>Ciencia Computacional CS50</a>, donde el estudiante aprende estructurac de datos y algoritmo usando primordialmente lenguaje C pero lo mas importante son los concepto y metodologia en el desarollo para resolver un problema en especifico, de allí algunos cursos de curiosidad en Coursera.",
   },
   {
     type: "Projects",
@@ -69,44 +69,71 @@ export const sectionDatas = [
         link: "https://nft-starter-repo-final.masiafmasiaf.repl.co/",
         github: "https://github.com/masiafrest/NFT-web3-BuildSpace",
         stack: ["react", "solidity"],
-      },{
-        title: "Cheil Samsung Group",
-        description:"Creación de herramientas internos, como dashboard, blog interno",
-        caracteristicas: [
-          "sistema de login",
-          "sistema de Multiple métricas",
-        ],
-        img:"",
-        link:"",
-        stack:["angular", "nextjs", "react", "typescript", "express", "tailwind", "postgresql", "redis"]
       },
       {
-        tittle:"Arterra",
-        description: "Proyecto de un familiar y su socia, al final su proyecto no se llevo a cabo 😢",
-        caracteristicas:[
-          "sistema de login y autenticación para cliente y dueños",
+        title: "Cheil Samsung Group",
+        description:
+          "Creación de herramientas internos, como dashboard, blog interno",
+        caracteristicas: [
+          "sistema de autenticación y autorización",
+          "sistema de Multiple métricas para ser analizado por otros departamentos",
+        ],
+        img: "",
+        link: "",
+        stack: [
+          "angular",
+          "nextjs",
+          "react",
+          "typescript",
+          "express",
+          "tailwind",
+          "postgresql",
+          "redis",
+        ],
+      },
+      {
+        tittle: "Arterra",
+        description:
+          "Proyecto de un familiar y su socia, al final su proyecto no se llevo a cabo 😢",
+        caracteristicas: [
+          "sistema de autenticación y autorización para cliente y dueños",
           "carrito de compras y multi formulario",
-          "listar artículos como un cms"
+          "listar artículos como un cms",
         ],
         img: "Arterra.png",
         link: "https://arterra-d3snsrh82-masiafrest.vercel.app/",
-        stack: ["nextjs", "react", "supabase", "vercel", "postgresql", "chakraui"]
+        stack: [
+          "nextjs",
+          "react",
+          "supabase",
+          "vercel",
+          "postgresql",
+          "chakraui",
+        ],
       },
       {
         title: "Colibid",
-        description: "Trabajar en equipo para la creación y mantenimiento fullstack, una aplicación usada por los bancos de España, a continuación los proyecto que me asignaron: ",
-        caracteristicas:[
+        description:
+          "Trabajar en equipo para la creación y mantenimiento fullstack, una aplicación usada por los bancos de España, a continuación los proyecto que me asignaron: ",
+        caracteristicas: [
           "implementar en un ya existente sistema de autenticación con el sistema de autenticación con google",
           "recrear el formulario de hipoteca con validación y mas de 20 pasos dinámico dependiendo del tipo de producto que se elija, incrementando la calidad de clientes para los bancos en un 40%",
           "integrar los servicios de TrueLayer (red abierta de bancos de Europa) a la aplicación desde front hasta backend para obtener los datos del cliente mediante los bancos",
           "integrar MapBox para la ubicación de la vivienda a hipotecar",
-          "implementado todo un CRM dentro de la aplicación para los bancos manejar los clientes que le enviamos"
+          "implementado todo un CRM dentro de la aplicación para los bancos manejar los clientes que le enviamos",
         ],
-        img:"colibid.png",
+        img: "colibid.png",
         link: "https://app.colibid.com/",
-        stack: ["react", "django", "python", "typescript", "materialui", "go", "redis"]
+        stack: [
+          "react",
+          "django",
+          "python",
+          "typescript",
+          "materialui",
+          "go",
+          "redis",
+        ],
       },
-      
     ],
   },
   {
